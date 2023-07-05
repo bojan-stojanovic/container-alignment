@@ -1,0 +1,25 @@
+:root {
+    --container-max-width: 1200px;
+}
+
+.container {
+    background-color: lightblue;
+    height: 200px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container--align-center {
+    max-width: var(--container-max-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container--align-left,
+.container--align-right {
+    max-width: calc(100% - (100% - var(--container-max-width)) / 2);
+}
+
+.container--align-right {
+    margin-left: auto;
+}
